@@ -122,7 +122,7 @@ def zip_button_click():
 
   # Delete all folders inside the lab directory that match any of the names 
   # in the matches list
-  matches = ["codegentemp", "CortexM3", "Export", "Generated_Source"]
+  matches = ["codegentemp", "CortexM3", "Export", "Generated_Source", "cortexm3", "export", "generated_source"]
   for root, dirnames, filenames in os.walk(dir_name + "/lab"):
     for dirname in dirnames:
       if dirname in matches: 
